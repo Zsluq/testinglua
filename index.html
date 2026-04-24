@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sukuna vs Mahoraga - Goofy Arena</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>Sukuna vs Mahoraga</h1>
+    <p class="sub">Goofy battle sim with random winner each run.</p>
+
+    <section class="hud">
+      <div class="hp-card">
+        <strong>Sukuna</strong>
+        <div class="bar"><div id="hp-sukuna" class="fill sukuna"></div></div>
+        <span id="hp-sukuna-text">1000</span>
+      </div>
+      <button id="restart">New Battle</button>
+      <div class="hp-card">
+        <strong>Mahoraga</strong>
+        <div class="bar"><div id="hp-mahoraga" class="fill mahoraga"></div></div>
+        <span id="hp-mahoraga-text">1000</span>
+      </div>
+    </section>
+
+    <canvas id="arena" width="900" height="550"></canvas>
+    <p id="log" class="log">Fight!</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
